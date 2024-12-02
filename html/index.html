@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facebook</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style_resp.css">
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="fac">facebook</div>
+        <form action="">
+            <div>
+                <label for="">Adresse e-mail ou mobile</label><br>
+                <input type="email" id="se_connecter" required><br>
+                <div id="left_alert"></div>
+                <input type="checkbox" id="check_head"><label class="sous" for="check_head">Garder ma session active</label>
+            </div>
+            <div>
+                <label for="">Mot de passe</label><br>
+                <input type="password" id="mot_de_passe" required><br>
+                <div id="medium_alert"></div>
+                <a href="#" class="sous">Mot de passe oublié ?</a>
+            </div>
+            <div id="right">
+                <input type="button" name="Connexion" value="Connexion" id="connect" onclick="connexion()">
+            </div>
+        </form>
+    </header>
+    <section>
+        <div>
+            <p>Avec Facebook, partagez et restez en contact avec votre entourage.</p>
+            <img src="../images/reseau.jpg" alt="">
+        </div>
+        <form>
+            <h1>Inscription</h1>
+            <p>C'est gratuit(et ça le restera toujours)</p>
+            <div class="inscription">
+                <div class="pre_nom">
+                    <input required type="text" placeholder="Prénom" autofocus id="ins_p">
+                    <input required type="text" placeholder="Nom de famille" id="ins_n">
+                </div>
+                <div class="others">
+                    <input required type="email" placeholder="Adresse e-mail ***@yy.zz ou mobile" id="ins_mail">
+                </div>
+                <span id="mail_c"></span>
+                <div  class="others">
+                    <input required type="text" placeholder="Confimer l'adresse e-mail ou le mobile" id="ins_mail_config">
+                </div>
+                <div  class="others">
+                    <input required type="password" placeholder="Nouveau mot de passe">
+                </div>
+            </div>
+            <div id="date_nais">
+                <p>Date de naissance</p>
+                <div>
+                    <select name="Jour" id="jour">
+                        <option value="">Jour</option>
+                    </select>
+                    <select name="Mois" id="mois">
+                        <option value="">Mois</option>
+                    </select>
+                    <select name="annee" id="nombre">
+                        <option value="">Annee</option>
+                    </select>
+                    <script>dateNais()</script>
+                </div>
+                <div>Pourquoi indiquer ma date de naissance ?</div>
+            </div>
+            <div id="sexe">
+                <input type="radio" name="genre" id="femme">
+                <label for="femme">Femme</label>
+                <input type="radio" name="genre" id="homme">
+                <label for="homme">Homme</label>
+            </div>
+            <div id="last">En cliquant sur Inscription, vous acceptez nos Conditions et indiquez que vous avez lu notre Politique d'utilisation des données, y compris notre Utilisation des cookies.</div>
+            <div>
+                <input type="button" value="Inscription" id="sub" onclick="inscription()">
+            </div>
+        </form>
+    </section>
+    <script src="../js/script.js"></script>
+</body>
+</html>

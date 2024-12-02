@@ -1,0 +1,143 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    min-width: 412px;
+}
+
+/** HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3b5998;
+    padding: 10px;
+}
+header label, header div.fac {
+    color: white;
+}
+header form {
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    /* align-items: center; */
+}
+header div.fac {
+    font-size: 38px;
+    font-weight: bold;
+}
+div#right {
+    align-self: center;
+}
+header form div {
+    margin: 3px;
+}
+div#left_alert, div#medium_alert, span#mail_c{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    color: rgb(251, 53, 53);
+}
+.sous {
+    color: rgba(255, 255, 255, 0.615);
+}
+header form div a {
+    text-decoration: none;
+}
+header form div a:hover {
+    color: white;
+}
+header form div a:active {
+    color: rgba(255, 255, 255, 0.615);
+}
+#connect {
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(10, 10, 135);
+    padding: 5px;
+}
+#connect:hover {
+    color: white;
+    background-color: blue;
+    transition: all 0.3s;
+}
+#connect:active {
+    color: white;
+    background-color: rgb(10, 10, 135);
+}
+/*  **/
+
+/** SECTION */
+section {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+section > div img {
+    width: 500px;
+    height: auto;
+}
+section form > * {
+    margin-bottom: 15px;
+}
+section form h1 {
+    margin-top: 0;
+    font-size: 30px;
+}
+section form div.inscription > div input {
+    padding: 8px 0 8px 5px;
+    width: 100%;
+}
+section form div.inscription div.pre_nom{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    gap: 1em;
+}
+section form div.inscription > div.others{
+    display: flex;
+    margin-bottom: 10px;
+}
+p {
+    margin: 0;
+}
+#nombre {
+    width: 70px;
+}
+#sub {
+    font-weight: bold;
+    font-size: large;
+    margin: 15px 0 15px 0;
+    padding: 10px 50px 10px 50px;
+    background-color: rgba(28, 134, 28, 0.876);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#sub:hover {
+    background-color: limegreen;
+    box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.768);
+    transition: all 0.3s;
+}
+#sub:active {
+    color: white;
+    background-color: rgba(28, 134, 28, 0.876);
+}
+#date_nais > *{
+    margin-bottom: 10px;
+}
+div#sexe {
+    margin-bottom: 15px;
+}
+div#sexe label {
+    color: black;
+}
+section form div#last {
+    width: 378px;
+    font-size: 13px;
+}

@@ -1,0 +1,14 @@
+@media (width < 680px) {
+    header {
+        flex-direction: column;
+    }
+    section > div img {
+        display: none;
+    }
+}
+
+@media (width < 518px) {
+    header form {
+        flex-direction: column;
+    }
+}
